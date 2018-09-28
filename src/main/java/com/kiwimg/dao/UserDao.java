@@ -37,4 +37,13 @@ public interface UserDao extends JpaRepository<User, Long>, UserDaoExt {
      */
     @Query(value = "FROM User b where b.name = :name")
     List<User> findByNamedParam(@Param("name") String name);
+
+
+    /**
+     * 使用约定命名规则
+     * @param name
+     * @return
+     */
+    List<User> findByName(String name);
+
 }
