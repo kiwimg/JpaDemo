@@ -1,6 +1,6 @@
-package com.ddyunf.dd.service;
+package com.kiwimg.mm.service;
 
-import com.ddyunf.po.User;
+import com.kiwimg.po.User;
 
 /**
  * Created by Administrator on 2017/6/7.
@@ -8,5 +8,4 @@ import com.ddyunf.po.User;
 public interface UserService {
 
     User findUserByAllId(long uid);
-    User findUserById(long uid);
 }

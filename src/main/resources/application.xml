@@ -20,151 +20,150 @@
           Use-dafault-filters=”false”的情况下： <context:exclude-filter>指定的不扫描，
                                                 <context:include-filter>指定的扫描
      -->
-    <!--&lt;!&ndash; 注解支持 &ndash;&gt;-->
-    <!--<context:annotation-config/>-->
-    <!--&lt;!&ndash; 注解扫描器 扫描范围 &ndash;&gt;-->
-    <!--&lt;!&ndash; 使用 annotation 自动注册bean,并检查@Controller, @Service, @Repository注解已被注入 &ndash;&gt;-->
+    <!-- 注解支持 -->
+    <context:annotation-config/>
+    <!-- 注解扫描器 扫描范围 -->
+    <!-- 使用 annotation 自动注册bean,并检查@Controller, @Service, @Repository注解已被注入 -->
 
-    <!--<context:component-scan base-package="com.ddyunf"/>-->
+    <context:component-scan base-package="com.kiwimg"/>
     <!--2配置数据源 -->
-    <!--<bean id="dataSource"  class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">-->
-        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver" />-->
-        <!--<property name="jdbcUrl" value="jdbc:mysql://192.168.1.198:3306/test?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />-->
-        <!--<property name="username" value="root" />-->
-        <!--<property name="password" value="1234QWERasdf" />-->
-        <!--<property name="readOnly" value="false" />-->
-        <!--<property name="connectionTimeout" value="30000" />-->
-        <!--<property name="idleTimeout" value="600000" />-->
-        <!--<property name="maxLifetime" value="1800000" />-->
-        <!--<property name="maximumPoolSize" value="25" />-->
-        <!--<property name="minimumIdle" value="10"/>-->
-    <!--</bean>-->
-    <!--<bean id="dataSource_readOnly"  class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">-->
-        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver" />-->
-        <!--<property name="jdbcUrl" value="jdbc:mysql://192.168.1.198:3306/test1?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />-->
-        <!--<property name="username" value="root" />-->
-        <!--<property name="password" value="1234QWERasdf" />-->
-        <!--<property name="readOnly" value="false" />-->
-        <!--<property name="connectionTimeout" value="30000" />-->
-        <!--<property name="idleTimeout" value="600000" />-->
-        <!--<property name="maxLifetime" value="1800000" />-->
-        <!--<property name="maximumPoolSize" value="25" />-->
-        <!--<property name="minimumIdle" value="10"/>-->
-    <!--</bean>-->
-    <!--<bean id="dataSource2"  class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">-->
-        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver" />-->
-        <!--<property name="jdbcUrl" value="jdbc:mysql://192.168.1.198:3306/test2?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />-->
-        <!--<property name="username" value="root" />-->
-        <!--<property name="password" value="1234QWERasdf" />-->
-        <!--<property name="readOnly" value="false" />-->
-        <!--<property name="connectionTimeout" value="30000" />-->
-        <!--<property name="idleTimeout" value="600000" />-->
-        <!--<property name="maxLifetime" value="1800000" />-->
-        <!--<property name="maximumPoolSize" value="25" />-->
-        <!--<property name="minimumIdle" value="10"/>-->
-    <!--</bean>-->
-    <!--<bean id="dataSource2_readOnly"  class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">-->
-        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver" />-->
-        <!--<property name="jdbcUrl" value="jdbc:mysql://192.168.1.198:3306/test3?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />-->
-        <!--<property name="username" value="root" />-->
-        <!--<property name="password" value="1234QWERasdf" />-->
-        <!--<property name="readOnly" value="false" />-->
-        <!--<property name="connectionTimeout" value="30000" />-->
-        <!--<property name="idleTimeout" value="600000" />-->
-        <!--<property name="maxLifetime" value="1800000" />-->
-        <!--<property name="maximumPoolSize" value="25" />-->
-        <!--<property name="minimumIdle" value="10"/>-->
-    <!--</bean>-->
-    <!--<context:property-placeholder location="classpath:jdbc.properties" />-->
+    <bean id="dataSource"  class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.1.198:3306/test?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+        <property name="username" value="root" />
+        <property name="password" value="1234QWERasdf" />
+        <property name="readOnly" value="false" />
+        <property name="connectionTimeout" value="30000" />
+        <property name="idleTimeout" value="600000" />
+        <property name="maxLifetime" value="1800000" />
+        <property name="maximumPoolSize" value="25" />
+        <property name="minimumIdle" value="10"/>
+    </bean>
+    <bean id="dataSource_readOnly"  class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.1.198:3306/test1?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+        <property name="username" value="root" />
+        <property name="password" value="1234QWERasdf" />
+        <property name="readOnly" value="false" />
+        <property name="connectionTimeout" value="30000" />
+        <property name="idleTimeout" value="600000" />
+        <property name="maxLifetime" value="1800000" />
+        <property name="maximumPoolSize" value="25" />
+        <property name="minimumIdle" value="10"/>
+    </bean>
+    <bean id="dataSource2"  class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.1.198:3306/test2?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+        <property name="username" value="root" />
+        <property name="password" value="1234QWERasdf" />
+        <property name="readOnly" value="false" />
+        <property name="connectionTimeout" value="30000" />
+        <property name="idleTimeout" value="600000" />
+        <property name="maxLifetime" value="1800000" />
+        <property name="maximumPoolSize" value="25" />
+        <property name="minimumIdle" value="10"/>
+    </bean>
+    <bean id="dataSource2_readOnly"  class="com.zaxxer.hikari.HikariDataSource"  destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql://192.168.1.198:3306/test3?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+        <property name="username" value="root" />
+        <property name="password" value="1234QWERasdf" />
+        <property name="readOnly" value="false" />
+        <property name="connectionTimeout" value="30000" />
+        <property name="idleTimeout" value="600000" />
+        <property name="maxLifetime" value="1800000" />
+        <property name="maximumPoolSize" value="25" />
+        <property name="minimumIdle" value="10"/>
+    </bean>
+    <context:property-placeholder location="classpath:jdbc.properties" />
 
-    <!--&lt;!&ndash;3 Spring整合jpa &ndash;&gt;-->
-    <!--<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">-->
-        <!--<property name="dataSource" ref="multipleDataSource" />-->
-        <!--&lt;!&ndash;<property name="packagesToScan" value="cn.damai.maibox.**.po" />&ndash;&gt;-->
-        <!--<property name="packagesToScan" value="com.ddyunf.**.po" />-->
-        <!--<property name="jpaVendorAdapter">-->
-            <!--<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">-->
-                <!--<property name="generateDdl" value="false" />-->
-                <!--<property name="showSql" value="true" />-->
-            <!--</bean>-->
-        <!--</property>-->
-    <!--</bean>-->
-    <!--&lt;!&ndash; 在服务启动时，将dao层接加入到容器管理中。ExtImpl（如果有实现类的话） &ndash;&gt;-->
-    <!--<jpa:repositories base-package="com.ddyunf.**.dao"-->
-                      <!--query-lookup-strategy="create-if-not-found" repository-impl-postfix="ExtImpl"-->
-                      <!--entity-manager-factory-ref="entityManagerFactory"-->
-                      <!--transaction-manager-ref="transactionManager">-->
-    <!--</jpa:repositories>-->
-    <!--&lt;!&ndash;4 事务管理器 &ndash;&gt;-->
-    <!--<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">-->
-        <!--<property name="entityManagerFactory" ref="entityManagerFactory"/>-->
-    <!--</bean>-->
-    <!--&lt;!&ndash;5 采用注释的方式管理事务&ndash;&gt;-->
-    <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
+    <!--3 Spring整合jpa -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="multipleDataSource" />
+        <!--<property name="packagesToScan" value="cn.damai.maibox.**.po" />-->
+        <property name="packagesToScan" value="com.kiwimg.**.po" />
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="generateDdl" value="false" />
+                <property name="showSql" value="true" />
+            </bean>
+        </property>
+    </bean>
+    <!-- 在服务启动时，将dao层接加入到容器管理中。ExtImpl（如果有实现类的话） -->
+    <jpa:repositories base-package="com.kiwimg.**.dao"
+                      query-lookup-strategy="create-if-not-found" repository-impl-postfix="ExtImpl"
+                      entity-manager-factory-ref="entityManagerFactory"
+                      transaction-manager-ref="transactionManager">
+    </jpa:repositories>
+    <!--4 事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+    <!--5 采用注释的方式管理事务-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 
-    <!--&lt;!&ndash;&lt;!&ndash; 配置多数据源映射 &ndash;&gt;&ndash;&gt;-->
-    <!--<bean id="multipleDataSource" class="com.ddyunf.MultipleDataSource" >-->
-        <!--<property name="targetDataSources">-->
-            <!--<map key-type="java.lang.String">-->
-                <!--<entry value-ref="dataSource" key="dataSource"></entry>-->
-                <!--<entry value-ref="dataSource_readOnly" key="dataSource_readOnly"></entry>-->
-                <!--<entry value-ref="dataSource2" key="dataSource2"></entry>-->
-                <!--<entry value-ref="dataSource2_readOnly" key="dataSource2_readOnly"></entry>-->
-            <!--</map>-->
-        <!--</property>-->
-        <!--&lt;!&ndash; 默认数据源 &ndash;&gt;-->
-        <!--<property name="defaultTargetDataSource" ref="dataSource" >-->
-        <!--</property>-->
-    <!--</bean>-->
-    <!--&lt;!&ndash;<aop:pointcut id="txPointcut" expression="execution(* com.ddyunf.unvi.service..*.*(..))"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<aop:around pointcut-ref="txPointcut" method="readOrWriteDB"/>&ndash;&gt;-->
-
-    <!--<aop:config expose-proxy="true">-->
-        <!--<aop:aspect ref="readWriteInterceptor" order="1">-->
-            <!--&lt;!&ndash; readOrWriteDB是ReadWriteInterceptor类里面的方法 &ndash;&gt;-->
-            <!--<aop:pointcut id="txPointcut" expression="execution(* com.ddyunf.dd.service..*.*(..))" />-->
-            <!--<aop:around pointcut-ref="txPointcut" method="readOrWriteDB"/>-->
-        <!--</aop:aspect>-->
-        <!--<aop:aspect ref="readWriteInterceptor1" order="2">-->
-            <!--&lt;!&ndash; readOrWriteDB是ReadWriteInterceptor类里面的方法 &ndash;&gt;-->
-            <!--<aop:pointcut id="txPointcut1" expression="execution(* com.ddyunf.mm.service..*.*(..))"/>-->
-            <!--<aop:around pointcut-ref="txPointcut1" method="readOrWriteDB"/>-->
-        <!--</aop:aspect>-->
-    <!--</aop:config>-->
-
-    <!--<bean id="readWriteInterceptor" class="com.ddyunf.ReadWriteInterceptor">-->
-        <!--<property name="masterName" value="dataSource"/>-->
-        <!--<property name="readOnly" value="true"/>-->
-        <!--<property name="weight" value="60"/>-->
-        <!--<property name="readMethodList">-->
-            <!--<list>-->
-                <!--<value>query*</value>-->
-                <!--<value>use*</value>-->
-                <!--<value>get*</value>-->
-                <!--<value>count*</value>-->
-                <!--<value>find*</value>-->
-                <!--<value>list*</value>-->
-                <!--<value>search*</value>-->
-            <!--</list>-->
-        <!--</property>-->
-    <!--</bean>-->
+    <!-- 配置多数据源映射 -->
+    <bean id="multipleDataSource" class="com.kiwimg.MultipleDataSource" >
+        <property name="targetDataSources">
+            <map key-type="java.lang.String">
+                <entry value-ref="dataSource" key="dataSource"></entry>
+                <entry value-ref="dataSource_readOnly" key="dataSource_readOnly"></entry>
+                <entry value-ref="dataSource2" key="dataSource2"></entry>
+                <entry value-ref="dataSource2_readOnly" key="dataSource2_readOnly"></entry>
+            </map>
+        </property>
+        <!-- 默认数据源 -->
+        <property name="defaultTargetDataSource" ref="dataSource" >
+        </property>
+    </bean>
 
 
-    <!--<bean id="readWriteInterceptor1" class="com.ddyunf.ReadWriteInterceptor">-->
+    <aop:config expose-proxy="true">
+        <aop:aspect ref="readWriteInterceptor" order="1">
+            <!-- readOrWriteDB是ReadWriteInterceptor类里面的方法 -->
+            <aop:pointcut id="txPointcut" expression="execution(* com.kiwimg.dd.service..*.*(..))" />
+            <aop:around pointcut-ref="txPointcut" method="readOrWriteDB"/>
+        </aop:aspect>
+        <aop:aspect ref="readWriteInterceptor1" order="2">
+            <!-- readOrWriteDB是ReadWriteInterceptor类里面的方法 -->
+            <aop:pointcut id="txPointcut1" expression="execution(* com.kiwimg.mm.service..*.*(..))"/>
+            <aop:around pointcut-ref="txPointcut1" method="readOrWriteDB"/>
+        </aop:aspect>
+    </aop:config>
 
-        <!--<property name="masterName" value="dataSource2"/>-->
-        <!--<property name="readOnly" value="true"/>-->
-        <!--<property name="weight" value="0"/>-->
-        <!--<property name="readMethodList">-->
-            <!--<list>-->
-                <!--<value>query*</value>-->
-                <!--<value>use*</value>-->
-                <!--<value>get*</value>-->
-                <!--<value>count*</value>-->
-                <!--<value>find*</value>-->
-                <!--<value>list*</value>-->
-                <!--<value>search*</value>-->
-            <!--</list>-->
-        <!--</property>-->
-    <!--</bean>-->
+    <bean id="readWriteInterceptor" class="com.kiwimg.ReadWriteInterceptor">
+        <property name="masterName" value="dataSource"/>
+        <property name="readOnly" value="true"/>
+        <property name="weight" value="60"/>
+        <property name="readMethodList">
+            <list>
+                <value>query*</value>
+                <value>use*</value>
+                <value>get*</value>
+                <value>count*</value>
+                <value>find*</value>
+                <value>list*</value>
+                <value>search*</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="readWriteInterceptor1" class="com.kiwimg.ReadWriteInterceptor">
+
+        <property name="masterName" value="dataSource2"/>
+        <property name="readOnly" value="true"/>
+        <property name="weight" value="0"/>
+        <property name="readMethodList">
+            <list>
+                <value>query*</value>
+                <value>use*</value>
+                <value>get*</value>
+                <value>count*</value>
+                <value>find*</value>
+                <value>list*</value>
+                <value>search*</value>
+            </list>
+        </property>
+    </bean>
 </beans>

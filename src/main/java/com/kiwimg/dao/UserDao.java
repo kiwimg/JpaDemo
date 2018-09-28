@@ -1,6 +1,6 @@
-package com.ddyunf.dao;
+package com.kiwimg.dao;
 
-import com.ddyunf.po.User;
+import com.kiwimg.po.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -18,7 +18,7 @@ public interface UserDao extends JpaRepository<User, Long>, UserDaoExt {
      * @param uid
      * @return
      */
-//    @Query(value = "SELECT * FROM users  WHERE uid = ?1",nativeQuery = true)
+    @Query(value = "SELECT * FROM users  WHERE uid = ?1",nativeQuery = true)
     User findUserByAllId(Long uid);
 
 
@@ -27,7 +27,7 @@ public interface UserDao extends JpaRepository<User, Long>, UserDaoExt {
      * @param uid
      * @return
      */
-    //@Query("FROM User  WHERE uid = ?1")
+    @Query("FROM User  WHERE uid = ?1")
     User findUserById(Long uid);
 
     /**

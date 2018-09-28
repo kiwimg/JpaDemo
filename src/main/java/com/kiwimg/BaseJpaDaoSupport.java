@@ -1,4 +1,4 @@
-package com.ddyunf;
+package com.kiwimg;
 
 import org.hibernate.Session;
 

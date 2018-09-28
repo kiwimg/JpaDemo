@@ -2,31 +2,20 @@
  * Created by Administrator on 2017/6/7.
  */
 
-import com.ddyunf.po.User;
+import com.kiwimg.po.User;
 import com.google.gson.Gson;
-import com.sun.org.apache.xerces.internal.impl.PropertyManager;
-import javafx.scene.NodeBuilder;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHost;
 import org.apache.http.entity.ContentType;
 import org.apache.http.nio.entity.NStringEntity;
-import org.apache.http.util.EntityUtils;
-import org.elasticsearch.action.bulk.BulkRequestBuilder;
-import org.elasticsearch.action.bulk.BulkResponse;
-import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.Response;
 import org.elasticsearch.client.RestClient;
-import org.elasticsearch.client.RestClientBuilder;
-import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.common.transport.TransportAddress;
-import org.elasticsearch.common.xcontent.XContentType;
-import org.elasticsearch.index.mapper.ObjectMapper;
-import org.elasticsearch.index.mapper.RootObjectMapper;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -34,19 +23,17 @@ import org.springframework.security.crypto.password.StandardPasswordEncoder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import javax.annotation.Resource;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.UUID;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/application.xml")
 public class SpringTest {
 //@Resource(name = "UserService1")
-//com.ddyunf.dd.service.UserService userService1;
+//com.kiwimg.dd.service.UserService userService1;
 
 
   @Test
@@ -118,8 +105,8 @@ public class SpringTest {
         TransportAddress address = new InetSocketTransportAddress(
                 InetAddress.getByName("139.199.119.214"), 9300);
 
-//.put("cluster.name", "ddyunf-application")
-        Settings settings = Settings.builder().put("cluster.name", "ddyunf-application")
+//.put("cluster.name", "kiwimg-application")
+        Settings settings = Settings.builder().put("cluster.name", "kiwimg-application")
                 .put("client.transport.sniff", true).put("client.transport.ignore_cluster_name", true)
                 .build();
 
@@ -138,7 +125,7 @@ public class SpringTest {
         return new PreBuiltTransportClient(settings).addTransportAddress(address);
     }
 //    private TransportClient initElasticSearchClient() throws IOException {
-//        Settings settings = Settings.builder().put("cluster.name", "ddyunf-application").build();
+//        Settings settings = Settings.builder().put("cluster.name", "kiwimg-application").build();
 //        TransportClient transportClient = TransportClient..settings(settings).build();
 //        return transportClient.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName("192.168.1.25"), 9300));
 //    }、、

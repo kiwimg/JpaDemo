@@ -1,7 +1,7 @@
-package com.ddyunf.dao;
+package com.kiwimg.dao;
 
-import com.ddyunf.BaseJpaDaoSupport;
-import com.ddyunf.po.User;
+import com.kiwimg.BaseJpaDaoSupport;
+import com.kiwimg.po.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

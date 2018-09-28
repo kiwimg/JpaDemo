@@ -1,4 +1,4 @@
-package com.ddyunf;
+package com.kiwimg;
 
 import java.io.Serializable;
 import java.util.List;

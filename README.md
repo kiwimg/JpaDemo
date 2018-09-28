@@ -2,7 +2,7 @@
 Spring-Jpa
 Spring JPA 示例 ，对JPA的扩展
 
-package com.ddyunf.po;
+package com.kiwimg.po;
 
 /**
  * Created by Administrator on 2017/6/7.

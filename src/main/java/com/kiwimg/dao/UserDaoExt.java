@@ -1,6 +1,6 @@
-package com.ddyunf.dao;
+package com.kiwimg.dao;
 
-import com.ddyunf.po.User;
+import com.kiwimg.po.User;
 
 /**
  * Created by Administrator on 2017/6/10.

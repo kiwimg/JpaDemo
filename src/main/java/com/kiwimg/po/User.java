@@ -1,4 +1,4 @@
-package com.ddyunf.po;
+package com.kiwimg.po;
 
 /**
  * Created by Administrator on 2017/6/7.
